@@ -1,0 +1,26 @@
+
+<!-- 
+   File: login.component.html
+   Author: Nádassy Ilona 
+   Copyright: 2025, Nádassy Ilona 
+   Group: 2024-25 SZOFT II/2/E 
+   Github: https://github.com/nadassy
+   Date: 2025-02-10
+
+ -->
+
+<h1 class="my-3">Belépés</h1>
+<p>Kedves Felhasználó! Lépj be a "macska" felhasználónévvel és az "egér" jelszóval!</p>
+<form [formGroup]="loginForm" (submit)="login()">
+  <div class="input-group mb-3">
+    <span class="input-group-text">Felhasználónév</span>
+    <input type="text" formControlName="name" class="form-control">
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text">Jelszó</span>
+    <input type="password" formControlName="password" class="form-control">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Belépés</button>
+</form>
+

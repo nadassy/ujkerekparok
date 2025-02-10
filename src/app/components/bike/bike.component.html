@@ -1,0 +1,36 @@
+
+<!-- 
+   File: bike.component.html
+   Author: Nádassy Ilona 
+   Copyright: 2025, Nádassy Ilona 
+   Group: 2024-25 SZOFT II/2/E 
+   Github: https://github.com/nadassy
+   Date: 2025-02-10
+
+ -->
+
+<h1 class="my-3">Új Bicikli Hozzáadása</h1>
+
+<form [formGroup]="bikeForm" (submit)="addBike()">
+  <div class="input-group mb-3">
+    <span class="input-group-text">Név</span>
+    <input type="text" formControlName="name" class="form-control" />
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text">Típus</span>
+    <input type="text" formControlName="type" class="form-control" />
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text">Ár</span>
+    <input type="text" formControlName="price" class="form-control" />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Bicikli Hozzáadása</button>
+</form>
+
+<!-- Biciklik listája -->
+<app-bike-list></app-bike-list>
+
+
+  
+
